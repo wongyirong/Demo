@@ -1,0 +1,18 @@
+.con_box{
+	box-sizing: content-box;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	margin: 50px;
+	border: 10px solid green;
+	background: red;
+}
+.ie_box{
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	border: 10px solid green;
+	padding: 10px;
+	margin: 50px;
+	background: red;
+}

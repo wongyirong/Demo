@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select Demo</title>
+</head>
+
+<body>
+    <h1>Select Demo</h1>
+    <div id="select"></div>
+    <script>
+    "use strict";
+
+    function Select(options) {
+        var layout;
+        for (var i = 0; i < options.data.length; i++) {
+            layout += "<option value='" + options.data[i] + "'>" + options.data[i] + "</option>";
+        }
+        var _Select = document.createElement("select");
+        _Select.innerHTML = layout;
+        _Select.addEventListener("change", function(e) {
+            options.onChange(e.target);
+        });
+        document.querySelector(options.target).appendChild(_Select);
+    }
+    Select({
+        target: '#select',
+        data: ['北京', '上海', '杭州', '深圳'],
+        onChange: (ev) => {
+            console.log(ev.value);
+        }
+    });
+    </script>
+</body>
+
+</html>

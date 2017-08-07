@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: "黑体";
+	font-size: 30px;
+}
+ul{
+	list-style: none;
+	overflow: hidden;
+}
+
+#box{
+	height: auto;
+	width: 720px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px #ccc;
+	margin: 0 auto;
+}
+#box ul li{
+	height: auto;
+	width: 720px;
+	float: left;
+}
+.top{
+	height: 145px;
+	width: 720px;
+}
+.logo{
+ 	float: left; 
+ 	position: relative;
+ 	display: block;
+	height: 145px;
+	width: 145px;
+}
+.verify{
+	position: absolute;
+	right:0;
+	bottom: 0;
+}
+.intro{
+	float: left;
+	padding-top: 40px;
+	height: 105px;
+	width: 540px;
+}
+.intro span{
+	display: block;
+	height: 40px;
+	width: 450px;
+	padding-left: 20px;
+	line-height: 40px;
+}
+.more{
+	float: left;
+	padding-top: 60px;
+	height: 85px;
+	width: 35px;
+}
+.bottom{
+	border-top: 1px solid #ccc;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.data{
+	float: left;
+	height: 70px;
+	line-height: 70px;
+	width: 239px;
+	border-right: 1px solid #ccc;
+}
+.data p{
+	height: 35px;
+	line-height: 35px;
+}
