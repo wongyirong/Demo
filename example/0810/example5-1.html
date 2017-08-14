@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DocumentFragment文档片段节点</title>
+    
+</head>
+
+<body>
+    <!-- tip区域 -->
+    <div id="tip">test1</div>
+    <ul id="list-node">
+        <li>test2</li>
+    </ul>
+    <script>
+        var frag = document.createDocumentFragment();
+        for (var i = 0; i < 10; i++) {
+            var li = document.createElement("li");
+            li.innerHTML = "List item" + i;
+            frag.appendChild(li);
+        }
+        document.getElementById("list-node").appendChild(frag);
+    
+   var newDiv = document.createElement("div");
+    newDiv.innerHTML = "我是一个新的元素节点的文本部分"; 
+    document.getElementById("tip").appendChild(newDiv);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>isElement</title>  
+</head>  
+<body>  
+    <div id="test">aaa</div>  
+    <!--这是一个注释节点-->  
+    <script>  
+        var isElement = function (el){  
+            return !!el && el.nodeType === 1;  
+        }  
+        var a = {            //随意定义一个变量，设置nodeType为1  
+           nodeType: 1  
+        }  
+        console.log(isElement(document.getElementById("test")));   
+        //结果：  true  
+        
+        console.log(isElement(document.getElementById("test").nextSibling));
+        //这里的nextSibling属性查找下一个相邻节点，即注释节点  
+        //结果：  false  
+        
+        console.log(isElement(a));  
+        //结果：  true  
+    </script>  
+</body>  
+</html> 

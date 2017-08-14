@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>nodeName,nodeValue</title>
+</head>
+
+<body>
+    <!--nodeName,nodeValue实验-->
+    <div id="container">这是一个元素节点</div>
+    
+    <script>
+        var divNode = document.getElementById('container');
+        console.log(divNode.nodeName + "/" + divNode.nodeValue);
+        //结果:    DIV/null  
+
+        var attrNode = divNode.attributes[0];
+        console.log(attrNode.nodeName + "/" + attrNode.nodeValue);
+        //结果：   id/container  
+
+        var textNode = divNode.childNodes[0];
+        console.log(textNode.nodeName + "/" + textNode.nodeValue);
+        //结果：   #text/这是一个元素节点  
+
+        var commentNode = document.body.childNodes[1];
+        //表示取第二个注释节点，因为body下面的第一个注释节点为空白符。  
+        console.log(commentNode.nodeName + "/" + commentNode.nodeValue);
+        //结果：  #comment/nodeName,nodeValue实验  
+
+        console.log(document.doctype.nodeName + "/" + document.doctype.nodeValue);
+        //结果： html/null  
+
+        var frag = document.createDocumentFragment();
+        console.log(frag.nodeName + "/" + frag.nodeValue);
+        //结果： #document-fragment/null
+    </script>
+</body>
+
+</html>

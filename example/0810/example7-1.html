@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>nodeType</title>
+</head>
+
+<body>
+    <div id="container">这是一个元素节点</div>
+
+    <script>
+    var divNode = document.getElementById('container');
+    /*
+    IE中只支持数值常量，因为低版本IE浏览器没有内置Node对象，其他浏览器数值常量和字符常量都支持，因此可
+    以直接用数值常量判断，这里为了比较两种写法，便都写在了这里  
+    */
+    if (divNode.nodeType == Node.ELEMENT_NODE || divNode.nodeType == 1) {
+        alert("Node is an element.");
+    }
+    </script>
+</body>
+
+</html>

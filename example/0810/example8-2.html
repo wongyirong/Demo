@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>domReady与window.onload</title>
+    <script src="domReady.js"></script>
+</head>
+
+<body>
+    <div id="showMsg"></div>
+    <div>
+        <img src="http://ot4uwpond.bkt.clouddn.com/18722848_557336457988730_7660979499982389248_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/16789546_416046058741759_893378920127135744_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/20582525_830877400415090_1895328961320189952_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/17267363_1269209209827732_7478780042323951616_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/18722848_557336457988730_7660979499982389248_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/16789546_416046058741759_893378920127135744_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/20582525_830877400415090_1895328961320189952_n.jpg" alt="">
+        <img src="http://ot4uwpond.bkt.clouddn.com/17267363_1269209209827732_7478780042323951616_n.jpg" alt="">
+    </div>
+    <script>
+        var msgBox = document.getElementById("showMsg");
+        var imgs = document.getElementsByTagName("img");
+        var time1 = null,
+            time2 = null;
+        myReady(function() {
+            msgBox.innerHTML += "dom已加载！<br />";
+            time1 = new Date().getTime();
+            msgBox.innerHTML += "时间戳：" + time1 + "<br />";
+        });
+        window.onload = function() {
+            msgBox.innerHTML += "onload已加载！<br />";
+            time2 = new Date().getTime();
+            msgBox.innerHTML += "时间戳：" + time2 + "<br />";
+            msgBox.innerHTML += "domReady比onload快：" + (time2 - time1) + "ms<br />";
+        };
+    </script>
+</body>
+
+</html>
