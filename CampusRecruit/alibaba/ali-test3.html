@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var oBtn = document.getElementsByTagName('a');
+            var oUl = document.getElementById('ul');
+
+            for (var i = 0; i < oBtn.length; i++) {
+                oBtn[i].onclick = function() {
+                    oUl.removeChild(this.parentNode);
+                }
+            };
+        }
+    </script>
+
+</head>
+<body>
+    <input type="text" id = "text">
+    <input type="button" value="点击添加" id = "btn">
+
+    <ul id = "ul">
+        <li>hello<a href="javascript:;">删除</a></li>
+        <li>123<a href="javascript:;">删除</a></li>
+        <li>234<a href="javascript:;">删除</a></li>
+        <li>hel234lo<a href="javascript:;">删除</a></li>
+    </ul>
+</body>
+</html>
