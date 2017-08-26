@@ -3,31 +3,28 @@ var __readline = require('readline-sync');
 __readline.setDefaultOptions({prompt: ''});
 var readline = __readline.prompt;
 
-//单行输入
+//最大子序列
 while(line=readline()){
     var lines = line.split(" ");
-    print(parseInt(lines[0]) + parseInt(lines[1]));
+    var len = lines.length;
+    var sum = max = parseInt(lines[0]);
+    for(var i = 1; i < len; i++) {
+    	if(max <= 0) {
+    		max = parseInt(lines[i]);
+    	} else {
+    		max += parseInt(lines[i]);
+    	}
+    	if (max > sum) {
+    		sum = max;
+    	}
+    }
+    print(sum);   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-//多行输入
-/*var n = parseInt(readline());
-var ans = 0;
-for(var i = 0;i < n; i++){
-    lines = readline().split(" ")
-    for(var j = 0;j < lines.length; j++){
-        ans += parseInt(lines[j]);
-    }
-    print(ans);
-}*/
+//求第K大的数
+var lines = readline().split(" ");
+var n = parseInt(readline());
+var num1 = lines.sort(function(a, b) {
+	return b - a;
+});
+print(num1[n - 1]);
