@@ -21,6 +21,7 @@ class Cash {
 const cash1 = new Cash(105);
 const cash2 = new Cash(66);
 const cash3 = cash1.add(cash2);
-const cash4 = Cash.add(cash1, cash2);
+const cash4 = Cash.add(cash1, cash2);//静态方法只能在类上调用
 const cash5 = new Cash(cash1 + cash2);
 console.log(`${cash3}`, `${cash4}`, `${cash5}`);
+

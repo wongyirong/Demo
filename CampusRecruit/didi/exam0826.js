@@ -3,11 +3,13 @@ var __readline = require('readline-sync');
 __readline.setDefaultOptions({prompt: ''});
 var readline = __readline.prompt;
 
-//最大子序列
+//求连续子数组的最大和
+let line;
+let n = parseInt(readline());
 while(line=readline()){
-    var lines = line.split(" ");
-    var len = lines.length;
-    var sum = max = parseInt(lines[0]);
+    const lines = line.split(" ");
+    let len = lines.length;
+    let sum = max = parseInt(lines[0]);
     for(var i = 1; i < len; i++) {
     	if(max <= 0) {
     		max = parseInt(lines[i]);

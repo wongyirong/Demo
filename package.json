@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "王艺荣的个人简历",
+  "main": "index.html",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wongyirong/Demo.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Y.R.Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wongyirong/Demo/issues"
+  },
+  "homepage": "https://github.com/wongyirong/Demo#readme"
+}
