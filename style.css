@@ -65,8 +65,7 @@ section.works > h2, section.contacts > h2{
     margin-bottom: 1em;
 }
 
-
-section.contacts {
+ section.contacts {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -78,14 +77,16 @@ section.contacts {
 section.contacts > dl{
     display: flex;
     flex-wrap: wrap;
-    width: 20em;
+    width: 17em;
 }
 section.contacts > dl a{
     text-decoration: underline;
 }
 section.contacts > dl > dt{
     width: 3em;
+    text-align: right;
 }
 section.contacts > dl > dd{
-    width: 17em;
+    width: 13em;
+    margin-left: 1em;
 }
