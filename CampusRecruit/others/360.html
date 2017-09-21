@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">
+			<div id="btn">click</div>
+		</div>
+	</div>
+	<script>
+		const inner = document.querySelector(".inner");
+		const outer = document.querySelector(".outer");
+		const body = document.body;
+		function handler(e) {
+			console.log(`${this.id || this.className || this.tagName}`);
+		}
+		body.addEventListener("click", handler);
+		outer.addEventListener("click", handler);
+		inner.addEventListener("click", handler);
+
+	</script>
+</body>
+</html>

@@ -1,3 +1,7 @@
+/*map*/
+var arr = '1 1 2 3 4'.split(' ').map(Number);
+console.log(arr);
+
 var a = {};
 var b = {key:'a'};
 var c = {key:'b'};
