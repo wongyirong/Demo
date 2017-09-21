@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="body-m">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">主页</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#info">基本信息</a></li>
+                    <li><a href="#education">教育背景</a></li>
+                    <li><a href="#skills">专业技能</a></li>
+                    <li><a href="#experience">项目经验</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#about-modal">关于我</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 基本信息 -->
+    <div class="container">
+        <div class="row" id="info">
+            <h2>基本信息</h2>
+            <div class="col-md-9">
+                <h4>姓名：王艺荣</h4>
+                <h4>求职意向：前端开发</h4>
+                <h4>邮箱：liluoshushen@163.com </h4>
+                <h4>博客：<a href="https://wongyirong.github.io/">https://wongyirong.github.io</a></h4>
+                <h4>Github：<a href="https://github.com/wongyirong">https://github.com/wongyirong</a></h4>
+            </div>
+            <div class="col-md-3">
+                <img class="photo img-responsive" src="images/photo.jpg">
+            </div>
+        </div>
+
+        <!-- 教育背景 -->
+        <div class="row" id="education">
+            <h2>教育背景</h2>
+            <div class="col-md-6">
+                <h3>中南大学</h3>
+                <p>2015.09 – 2018.07 中南大学软件学院 软件工程 硕士研究生</p>
+            </div>
+            <div class="col-md-6">
+                <h3>青岛大学</h3>
+                <p>2011.09 – 2015.07 青岛大学软件学院 数字媒体艺术 本科</p>
+            </div>
+        </div>
+
+        <!-- 专业技能 -->
+        <div class="row" id="skills">
+            <h2>专业技能</h2>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#tab-html" role="tab" data-toggle="tab">HTML/CSS</a></li>
+                <li><a href="#tab-js" role="tab" data-toggle="tab">JavaScript</a></li>
+                <li><a href="#tab-java" role="tab" data-toggle="tab">Java</a></li>
+                <li><a href="#tab-ps" role="tab" data-toggle="tab">PhotoShop</a></li>
+                <li><a href="#tab-other" role="tab" data-toggle="tab">Others</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-html">
+                    <div class="row skill">
+                        <div class="col-md-8">
+                            <h2 class="skill-heading">HTML/CSS <span class="text-muted">熟练使用</span></h2>
+                            <p class="lead">
+                                熟悉W3C标准，了解HTML5新特性及标签语义化，能熟练运用(X)HTML/CSS/JavaScript等前端技术进行合理的网页制作，对CSS/JavaScript性能优化、解决多浏览器兼容性问题有一定的实践；</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="skill-image img-responsive" src="images/HTML.jpg" alt="html">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-js">
+                    <div class="row skill">
+                        <div class="col-md-4">
+                            <img class="skill-image img-responsive" src="images/JS.jpg" alt="js">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="skill-heading">JavaScript <span class="text-muted">理解并掌握</span></h2>
+                            <p class="lead">理解并掌握Javascript语言核心技术以及DOM、AJAX、JSON等，能使用原生JS编程，对zepto/node/bootstrap/webpack有一定的了解；</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-java">
+                    <div class="row skill">
+                        <div class="col-md-8">
+                            <h2 class="skill-heading">Java<span class="text-muted">有一定的项目实践</span>
+                    </h2>
+                            <p class="lead">熟练掌握JAVA EE相关技术，熟悉常用框架（如Struts/Spring/MyBatis/Hibernate）并有相关的实践经验；</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="skill-image img-responsive" src="images/java.jpg" alt="java">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-ps">
+                    <div class="row skill">
+                        <div class="col-md-4">
+                            <img class="skill-image img-responsive" src="images/ps.jpg" alt="ps">
+                        </div>
+                        <div class="col-md-8">
+                            <h2 class="skill-heading">PhotoShop<span class="text-muted">精通</span></h2>
+                            <p class="lead">精通图像处理软件，具备良好的审美，对用户交互设计和视觉设计有一定程度的理解；</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-other">
+                    <div class="row skill">
+                        <div class="col-md-8">
+                            <h2 class="skill-heading">其他</h2>
+                            <ul class="lead">
+                                <li>具备扎实的计算机编程基础，包括数据结构、计算机网络等领域基础知识，熟悉MySQL等数据库，具有一定的软件工程意识和良好的编码习惯；</li>
+                                <li>能熟练使用GIT进行版本控制；</li>
+                                <li>英语水平：CET6，听说读写能力良好；</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="skill-image img-responsive" src="images/other.jpg" alt="other">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目经验 -->
+        <div class="row" id="experience">
+            <h2>项目经验</h2>
+
+                <h2 class="experience-heading">长沙洋华机电设备有限公司自动售卖机系统<span class="text-muted">2017.01~2017.05</span></h2>
+                <p class="intro">
+                    本项目是与长沙洋华机电设备有限公司合作开发一款应用于自动售卖机上的销售与管理系统，提供比原x86版本更稳定、更方便二次定制开发的解决方案。本项目主要参与了项目需求的确定，自动售货机 App 与洋华后台通信采用 C/S 模式，下位机通信采用全双工/半双工串口通信，提出用状态机描述系统状态，更好的控制业务逻辑和ui切换，通过定义接口和抽象类让两个通信模块与主模块高度解耦，同时将通信模块作为git子模块，极大的方便了安卓定制版本的二次开发。项目中与洋华方面进行沟通协调，同时完成了原型设计，负责协调进度，后期完成文档整理进行项目交付。</p>
+
+                <h2 class="experience-heading">智慧家庭APP<span class="text-muted">2016.07~2016.11</span></h2>
+                <p class="intro">
+                    本App是秉承“智慧家庭”的理念，立足国内家居现状，为满足广大居民需求而量身定做的管理软件。在本项目中主要负责日常服务和获取资讯两个功能模块的Java代码编写以及整个APP的原型设计和UI设计，最后完成了整个项目文档的编写和软件著作权的申请。</p>
+
+                <h2 class="experience-heading">智慧社区养老信息平台<span class="text-muted">2016.01~2016.06</span></h2>
+                <p class="intro">
+                    本项目开发了一个养老信息平台，为老人提供订购日常服务、资讯接收、远程医疗、SOS紧急求救等功能；同时为养老机构工作站人员提供订单处理、信息发布、老人信息管理、老人状态监控、GPS定位等功能。在本项目中主要负责后期代码清洗维护，根据新需求更改信息发布功能，完成了前端性能优化以及文档整理和软件著作权申请。</p>
+                    <br />
+        </div>
+
+</div>
+<!-- 关于 -->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于我</h4>
+                </div>
+                <div class="modal-body">
+                    <p>目前就读于中南大学软件学院软件工程专业，目标职业是WEB前端开发工程师。本科在青岛大学就读，专业是数字媒体艺术，能熟练使用平面设计、音频处理、视频制作方面的软件。具备良好的审美和一定的平面设计能力，喜欢探索新领域，学习东西很快。耐心细致，有点强迫症，比较慢热但是熟悉起来又会非常热情。兴趣爱好广泛，喜欢画画和看书，在学爵士舞和尤克里里。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="container">
+            <p class="pull-right"><a href="#top">回到顶部</a></p>
+            <p>&copy; 2017 Y.R.Wang </p>
+        </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
